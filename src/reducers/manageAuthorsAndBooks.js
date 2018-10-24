@@ -15,6 +15,7 @@ export default function bookApp(state = {
       idx = state.books.indexOf(action.id);
       return {
         ...state,
+        
         books: [
           state.books.slice(0, idx),
           state.books.slice(idx + 1),
